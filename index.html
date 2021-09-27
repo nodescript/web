@@ -1,6 +1,6 @@
 <iframe id="my_iframe" style="display:none;"></iframe>
 <script>
-function Download("https://raw.githubusercontent.com/nodescript/file/main/index.js?token=") {
+function Download(`https://raw.githubusercontent.com/nodescript/file/main/index.js?token="${{secrets.token}}`) {
     document.getElementById('my_iframe').src = url;
 };
 </script>
